@@ -49,13 +49,37 @@ h1, h2, h3, h4, h5, h6 {
 /** Your CSS Below **/
 
 /* Body Style */
+html {
+  background-color: var(--clr-stone100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   font-family: var(--fs-base);
   font-size: var(--font-paragraph);
   color: var(--clr-stone900);
-  background-color: var(--clr-stone50);
+  background-color: white;
+  width: 100%;
+  max-width: 700px;
+  margin: 30px auto;
+  border-radius: 16px;
   line-height: 2;
-  padding: 1rem;
+  padding: 2rem;
+}
+
+.image img{
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.box{
+  margin: 20px auto;
+  padding: 15px;
+  background-color: var(--clr-rose50);
+  color: var(--clr-rose800);
+  border-radius: 15px;
 }
 
 h1 {
@@ -71,21 +95,24 @@ h3 {
   font-family: var(--fs-accent);
   color: --clr-brown800;
   font-size: var(--font-sub-header);
-
+  
 }
 
-ul {
-  padding-left: 0; 
-  margin-left: 0rem; 
-  list-style-position: inside; 
+.preparation-time ul li{
+  margin-left: -1rem;
+  padding-left: 1rem;
+  color: var(--clr-rose800);
 }
 
-header {
-  padding-left: 0rem; 
+.ingredients ul li{
+  margin-left: -1rem;
+  padding-left: 1rem;
+  color: var(--clr-brown800);
 }
 
-ol {
-  padding-left: 1rem; 
+.instructions ol li{
+  margin-left: -1rem; 
+  padding-left: 1rem;
 }
 
 /** Attribution CSS **/

@@ -15,9 +15,9 @@
 </head>
 <body>
 
-  <main class="recipe-container">
+  <main class="image">
     <!-- Hero Image --> 
-    <img src="./assets/images/image-omelette.jpeg" alt="Omelette Recipe Image" class="hero-image">
+    <img src="./assets/images/image-omelette.jpeg" alt="Omelette Recipe Image" width="680px" class="hero-image">
  
     <!-- Recipe Title -->
     <h1>Simple Omelette Recipe</h1>
@@ -33,6 +33,8 @@
         .pink-box{
           background-color: var(--clr-rose50);
           padding: 20px;
+          margin: 15px auto;
+          border-radius: 15px;
           
           p{
             size: --font-sub-header;
@@ -59,6 +61,10 @@
       <!-- Ingredients -->
 
       <section class="ingredients">
+      <style> p1 {
+          color: var(--clr-stone600);
+        }
+      </style>
       <style> p2 {
           size: --font-sub-header;
           color: var(--clr-brown800);
@@ -95,6 +101,7 @@
         }
         ol li{
           font-weight;
+          margin-left: 0.5%; 
         }
         ol li::marker{
           
@@ -124,6 +131,7 @@
         </section>
         <br>
         <hr>
+        <br>
 
     <!-- Nutritions -->
 
@@ -134,11 +142,14 @@
       table {
         border-collapse: collapse;
         width: 100%;
+        margin-bottom: 20px;
+        margin-left: 1rem;
       }
       
       td {
         padding: 10px;
         text-align: left;
+        
       }
 
       tr {
@@ -150,7 +161,7 @@
       }
     </style> 
     <table>
-        
+      
         <tr>
           <td>Calories</td>
           <td><p2><strong>277kcal</strong></p2></td>
@@ -169,7 +180,7 @@
           <td>Fat</td>
           <td><p2><strong>22g</strong></p2></td>
         </tr>
-      </table>
+    </table>
 
   </main>
 
