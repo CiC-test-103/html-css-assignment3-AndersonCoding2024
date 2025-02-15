@@ -48,6 +48,46 @@ h1, h2, h3, h4, h5, h6 {
 
 /** Your CSS Below **/
 
+/* Body Style */
+body {
+  font-family: var(--fs-base);
+  font-size: var(--font-paragraph);
+  color: var(--clr-stone900);
+  background-color: var(--clr-stone50);
+  line-height: 2;
+  padding: 1rem;
+}
+
+h1 {
+  font-family: var(--fs-accent);
+}
+
+h2 {
+  font-family: var(--fs-base);
+  color: --clr-brown800;
+}
+
+h3 {
+  font-family: var(--fs-accent);
+  color: --clr-brown800;
+  font-size: var(--font-sub-header);
+
+}
+
+ul {
+  padding-left: 0; 
+  margin-left: 0rem; 
+  list-style-position: inside; 
+}
+
+header {
+  padding-left: 0rem; 
+}
+
+ol {
+  padding-left: 1rem; 
+}
+
 /** Attribution CSS **/
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
