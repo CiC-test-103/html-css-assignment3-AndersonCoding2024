@@ -82,6 +82,21 @@ body {
   border-radius: 15px;
 }
 
+.pink-box{
+  background-color: var(--clr-rose50);
+  padding: 20px;
+  margin: 15px auto;
+  border-radius: 15px;
+  
+  p{
+    size: --font-sub-header;
+    color: var(--clr-rose800);
+  }
+  p1{
+    color: var(--clr-stone600);
+  }
+}
+
 h1 {
   font-family: var(--fs-accent);
 }
@@ -113,6 +128,47 @@ h3 {
 .instructions ol li{
   margin-left: -1rem; 
   padding-left: 1rem;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    margin:  0;
+   
+    border-radius: 0;
+  }
+
+  .image {
+    margin: 0; 
+    padding: 0;
+  }
+
+  .image img {
+    width: 100%; 
+    border-radius: 0;
+    margin: 0;
+  }
+  .description, .pink-box, .ingredients, .instructions, .nutrition {
+    padding-left: 2rem; 
+    padding-right: 2rem; 
+  }
+  .mainHeading {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  .description {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+.pink-box {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: 2rem; 
+  margin-right: 2rem; 
+  width: calc(100% - 4rem);
+}
+
 }
 
 /** Attribution CSS **/
